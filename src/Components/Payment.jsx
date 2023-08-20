@@ -24,8 +24,8 @@ function Payment() {
             <h3>Delivery Address</h3>
           </div>
           <div className="payment_address">
-            <p>123 React Lane</p>
-            <p>Los Angeles, CA</p>
+            <p>IIT Bhilai</p>
+            <p>Bhilai, chhattisgarh</p>
           </div>
         </div>
         {/* Payment section - review items */}

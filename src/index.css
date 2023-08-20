@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
   color: var(--blackColor);
+  background-color: rgb(234, 207, 207);
 }
 
 :root {
@@ -166,7 +167,8 @@
   margin: 10px;
   padding: 20px;
   width: 60%;
-  background-color: white;
+  background-color: #f3f2f2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
   z-index: 1;
   border-radius: 1rem;
 }
@@ -180,6 +182,7 @@
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  background-color: #f3f2f2;
   margin-bottom: 20px;
 }
 .product .add_to_cart_button {
@@ -205,17 +208,29 @@
 .product .product_info {
   height: 100px;
   margin-bottom: 15px;
+  background-color: #f3f2f2;
   padding-bottom: 2rem;
+}
+.product .product_info > p {
+  background-color: #f3f2f2;
 }
 .product .product_info .product_rating {
   display: flex;
+  background-color: #f3f2f2;
 }
 .product .product_info .product_rating > p {
   margin: 0;
+  background-color: #f3f2f2;
   font-size: 12px;
 }
 .product .product_info .product_price {
   margin-top: 5px;
+}
+.product .product_info .product_price > strong {
+  background-color: #f3f2f2;
+}
+.product .product_info .product_price > small {
+  background-color: #f3f2f2;
 }
 
 .login {
@@ -246,22 +261,36 @@
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
 }
+.login .login_container > p {
+  background-color: rgb(234, 200, 207);
+  margin-top: 15px;
+  font-size: 12px;
+}
+.login .login_container > a {
+  color: blue;
+  background-color: rgb(234, 200, 207);
+}
+.login .login_container > a:hover {
+  color: white;
+}
 .login .login_container > h1 {
   font-weight: 500;
   margin-bottom: 20px;
+  background-color: rgb(234, 200, 207);
 }
-.login .login_container > h5 {
+.login .login_container > form {
+  background-color: rgb(234, 200, 207);
+}
+.login .login_container > form > h5 {
+  background-color: rgb(234, 200, 207);
   margin-bottom: 5px;
 }
 .login .login_container > input {
   height: 30px;
+  background-color: rgb(234, 200, 207);
   margin-bottom: 10px;
   background-color: white;
   width: 98%;
-}
-.login .login_container > p {
-  margin-top: 15px;
-  font-size: 12px;
 }
 .login .login_container .login_signInButton {
   border: 1px solid;
@@ -311,7 +340,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: white;
+  background-color: rgb(234, 207, 207);
   height: -moz-max-content;
   height: max-content;
 }
@@ -325,6 +354,7 @@
 .checkout .checkout_left {
   display: flex;
   flex-direction: column;
+  background-color: rgb(234, 207, 207);
   padding-left: 10px;
 }
 .checkout .checkout_left .checkout_ad {
@@ -339,7 +369,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   padding-top: 1rem;
   width: 100%;
   height: -moz-max-content;
@@ -430,8 +459,8 @@
   width: 70%;
   height: 7rem;
   padding: 0.5rem;
-  background-color: #f3f3f3;
-  border: 1px solid #dddddd;
+  background-color: rgb(234, 207, 207);
+  border: 1px solid rgba(107, 100, 100, 0.4156862745);
   border-radius: 3px;
 }
 .subtotal .subtotal_gift {
@@ -470,15 +499,15 @@
 }
 
 .payment {
-  background-color: white;
+  background-color: rgb(234, 207, 207);
 }
 .payment .payment_container > h1 {
   text-align: center;
   font-size: 20px;
   padding: 10px;
   font-weight: 400;
-  background-color: rgb(234, 237, 237);
-  border-bottom: 1px solid lightgray;
+  background-color: rgb(234, 207, 207);
+  border-bottom: 1px solid rgba(141, 127, 127, 0.627);
 }
 .payment .payment_container > h1 a {
   -webkit-text-decoration: dotted;
@@ -489,7 +518,7 @@
   display: flex;
   padding: 5px;
   margin: 2px;
-  border: 1px solid lightgray;
+  border-bottom: 1px solid rgba(141, 127, 127, 0.627);
 }
 .payment .payment_container .payment_section h3 {
   font-weight: 500;
@@ -514,7 +543,7 @@
   font-weight: bold;
 }
 .payment .payment_container .payment_details .payment_button {
-  background-color: #FFFFFF;
+  background-color: rgba(239, 203, 203, 0.832);
   border: 0;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -528,7 +557,7 @@
   -webkit-text-decoration: none #D1D5DB solid;
           text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
   cursor: pointer;
   -moz-user-select: none;
        user-select: none;
@@ -555,8 +584,8 @@
   width: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+  background-color: rgb(234, 200, 207);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -564,30 +593,35 @@
 }
 .payment-gateway-container .payment-gateway .payment-gateway-header {
   padding: 1rem;
+  background-color: rgb(234, 200, 207);
 }
 .payment-gateway-container .payment-gateway .payment-gateway-header .payment-gateway-title {
+  background-color: rgb(234, 200, 207);
   font-size: 1.5rem;
   font-weight: bold;
   color: #374151;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-details {
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: rgb(234, 200, 207);
   display: flex;
   align-items: center;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-details .payment-gateway-card-icon {
+  background-color: rgb(234, 200, 207);
   width: 3rem;
   height: 3rem;
   fill: currentColor;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-details .payment-gateway-card {
+  background-color: rgb(234, 200, 207);
   flex: 1;
   display: flex;
   align-items: center;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-details .payment-gateway-card .payment-gateway-card-inputs {
   margin-left: 0.5rem;
+  background-color: rgb(234, 200, 207);
   padding: 0.3rem;
   border: 1px solid #6b7280;
   border-radius: 0.25rem;
@@ -596,21 +630,24 @@
   box-sizing: border-box;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-details .payment-gateway-card .payment-gateway-card-inputs .expiry {
+  background-color: rgb(234, 200, 207);
   margin-left: 1rem;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-type {
   flex: 0.5;
   padding: 1rem;
-  background-color: #f4f4f5;
+  background-color: rgb(234, 200, 207);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-type .payment-gateway-card-image {
   width: 2rem;
+  background-color: rgb(234, 200, 207);
   height: 2rem;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-type .payment-gateway-card-label {
+  background-color: rgb(234, 200, 207);
   color: #6b7280;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-card-type .payment-gateway-card-label .payment-gateway-card-select {
@@ -619,7 +656,7 @@
   border: none;
   border-radius: 0.25rem;
   color: #6b7280;
-  background-color: #ffffff;
+  background-color: rgb(234, 200, 207);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -630,16 +667,20 @@
   background-color: #eef2ff;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-actions {
+  background-color: rgb(234, 200, 207);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-actions .payment-gateway-button {
+  background-color: rgb(234, 200, 207);
   border: none;
   border-radius: 0.25rem;
   padding: 0.75rem 1rem;
   font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+  border: 1px solid rgba(141, 127, 127, 0.627);
   cursor: pointer;
 }
 .payment-gateway-container .payment-gateway .payment-gateway-actions .payment-gateway-button .buy {
